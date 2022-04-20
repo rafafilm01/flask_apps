@@ -1,0 +1,20 @@
+<h1>Welcome to the puppy survey ! </h1>
+<form method="post">
+<!--security teg required -->
+{{ form.hidden_tag() }}
+<!--labels and attributes that correspond to the form on basic.py-->
+{{ form.breed.label }}{{ form.breed }}
+<br>
+{{ form.neutered.label }}{{ form.neutered }}
+<br>
+{{ form.mood.label }}{{ form.mood }}
+<br>
+{{ form.food_choice.label }}{{ form.food_choice }}
+<br>
+{{ form.feedback.label }}{{ form.feedback }}
+<br>
+{{form.submit()}}
+
+
+
+</form>
