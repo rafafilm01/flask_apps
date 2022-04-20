@@ -15,7 +15,7 @@ environment variables need to be set up to avoid errors (os lib)
 flask_dance references - https://flask-dance.readthedocs.io/en/latest/
 CLIENT_ID and CLINET_SECRET removed , can be added from https://console.cloud.google.com/
 
-#### flask_app_intro ###
+##### flask_app_intro ####
 
 libs used: 
 from flask import Flask, render_template, request
@@ -31,3 +31,16 @@ examples of filters
 examples of url_for() (links for templates)
 introduction to render_teamplates 
 introduction to jinja (syntax and use)
+
+
+#### flask_app_no2 ####
+
+libs used: 
+from flask import Flask, render_template, request
+
+description:
+example of template forms 
+example of a custom made 404 page not found 
+request library used for getting the information from the form 
+NOTE ! make sure to use the correct bootstrap version as script links will work differently , current bootstrap for the project 4.6
+username validation test under username_check.html . Make sure username provided by the user meets our conditions 
