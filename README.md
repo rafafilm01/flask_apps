@@ -47,3 +47,16 @@ description:
 - username validation test under username_check.html . Makes sure username provided by the user meets the conditions 
 ---
 
+#### flask_app_no2 ####
+
+libs used:
+- from flask import Flask, render_template
+- from flask_wtf import FlaskForm
+- from wtforms import StringField, SubmitField
+
+Description:
+- flask form examples 
+- GET and POST method in use 
+- class inheritance (custom class inheriting from FlaskForm class )
+- form logic applied in def index(), schema in py code , if statement in jinja on index.html
+---
