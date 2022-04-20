@@ -1,0 +1,42 @@
+{% extends 'base.html'%}
+
+
+{% block content%}
+<div class="jumbotron">
+<h1> Thank you! Your new username  is {{username}} </h1>
+<!-- {{upper_case_char}}
+{{lower_case_char}}
+{{number_chars}} --><!-- SANITY CHECK-->
+
+<!-- Logic works but catches the first exception (e.g not enough capital letters and does not check against the other 2 conditions giving the user an incomplete answer, Onyl when the 1 condition is met and a capital letter is provided will the check continue and catch the next exception (e.g no numbers) , else statement works fine )-->
+<!-- {%if upper_case_char ==0 %}
+<p>Not enough upper case characters</p>
+{% elif lower_case_char ==0 %}
+<p>Not enough lower case characters </p>
+{% elif number_chars==0 %}
+<p>not enough numbers</p>
+{% else %}
+<P>username criteria met. Thank you for signing up!</P>
+
+{%endif%} -->
+
+
+<!-- round 2 , using AND connector --> 
+<!--solution works correctly but it does not catch individual exceptions (no lower case or no number). Instead it will either display a success message or a message saying what should a username consist of-->
+<!--in real life scenario failure to provide username that is not strong enough would redirect the user o a different page (or refresh the form with an additional message)-->
+<!--potential  solution by incorporating more specific conditions  -->
+{% if upper_case_char !=0  and  lower_case_char !=0  and number_chars!=0 %}
+<p>username meets the right criteria</p>
+{% else%}
+<p>please ensure the username meets the strength criteria:</p>
+<ul>
+    <li>username contains an upper case letter </li>
+    <li>username contains a lower case letter </li>
+    <li>username contains at least 1 number</li>
+</ul>
+{% endif %}
+</div>
+
+
+
+{% endblock %}
