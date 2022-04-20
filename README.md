@@ -22,17 +22,15 @@ from flask import Flask, render_template, request
 
 description:
 
-example of template forms 
-example of a custom made 404 page not found 
-request lib used for getting the information from the form 
-examples of referencing base.html for code uniformity 
-examples of block content 
-examples of filters 
-examples of url_for() (links for templates)
-
-introduction to render_teamplates
-
-introduction to jinja (syntax and use)
+-example of template forms 
+-example of a custom made 404 page not found 
+-request lib used for getting the information from the form 
+-examples of referencing base.html for code uniformity 
+-examples of block content 
+-examples of filters 
+-examples of url_for() (links for templates)
+-introduction to render_teamplates
+-introduction to jinja (syntax and use)
 
 
 #### flask_app_no2 ####
