@@ -47,16 +47,32 @@ description:
 - username validation test under username_check.html . Makes sure username provided by the user meets the conditions 
 ---
 
-#### flask_app_no2 ####
+#### flask_app_no3 ####
 
 libs used:
 - from flask import Flask, render_template
 - from flask_wtf import FlaskForm
 - from wtforms import StringField, SubmitField
 
-Description:
+description:
 - flask form examples 
 - GET and POST method in use 
 - class inheritance (custom class inheriting from FlaskForm class )
 - form logic applied in def index(), schema in py code , if statement in jinja on index.html
 ---
+
+#### flask_app_no4 ####
+
+libs used:
+- from flask import Flask, render_template, session, redirect, url_for, flash
+- from flask_wtf import FlaskForm
+- from wtforms import (StringField, BooleanField, DateField, RadioField, SelectField, 
+                     SearchField, TextAreaField, TelField, SubmitField)
+                     
+description:
+- use and examples of form fields
+- use of sessions for holding and passing data provided by user in the form
+- use of flash for flash alerts / messages  
+- redirect - url_for used as an alternative to routing web traffic in HTML code 
+- NOTE flow of the program --> variables used in forms are described in classes along with potential answers  (which inherits types of form fields from flaskForm), then these parameters are  put together in a form created from the custom class we set up earlier and called on in app.route / def new_function . Session is being used for the input data to be stored and moved forward. Lastly in the HTML code we need establish form elements (so that they are showing and in which order ). form.object.label & form.object(for user selection / input)
+                     
