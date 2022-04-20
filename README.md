@@ -13,7 +13,7 @@ description:
 - welcome.html will only be available if the user is authenticated , otherwise a custom internal error page will be shown 
 - environment variables need to be set up to avoid errors (os lib)
 - flask_dance references - https://flask-dance.readthedocs.io/en/latest/
-- CLIENT_ID and CLINET_SECRET removed , can be added from https://console.cloud.google.com/
+- CLIENT_ID and CLIENT_SECRET removed , can be added from https://console.cloud.google.com/
 ---
 
 ##### flask_app_intro ####
