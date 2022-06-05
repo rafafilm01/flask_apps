@@ -75,7 +75,8 @@ description:
 - use of flash for flash alerts / messages  
 - redirect - url_for used as an alternative to routing web traffic in HTML code 
 - NOTE flow of the program --> variables used in forms are described in classes along with potential answers  (which inherits types of form fields from flaskForm), then these parameters are  put together in a form created from the custom class we set up earlier and called on in app.route / def new_function . Session is being used for the input data to be stored and moved forward. Lastly in the HTML code we need establish form elements (so that they are showing and in which order ). form.object.label & form.object(for user selection / input)
-                     
+---
+
 #### flask_app_no5 ####
 
 libs used:
