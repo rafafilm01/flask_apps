@@ -90,3 +90,9 @@ description:
 - creating a model (table) in SQLAlchemy 
 - process for activating a DB in terminal
 ---
+
+#### flask_app_no6 ####
+
+
+---
+
