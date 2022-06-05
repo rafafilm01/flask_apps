@@ -88,4 +88,4 @@ description:
 -flask SQLalchemy in use alng with examples 
 - creating a model (table) in SQLAlchemy 
 - process for activating a DB in terminal
-
+---
