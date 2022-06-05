@@ -105,3 +105,24 @@ description:
 - accessing data from the table in baisc.py
 ---
 
+#### user_authentication_P_D_flask_app ####
+libs Used:
+- from flask import render_template, redirect, request, url_for,flash, abort
+- from flask_login import login_user, login_required, logout_user
+- from werkzeug.security import generate_password_hash, check_password_hash 
+- from flask_login import UserMixin
+- from flask_wtf import FlaskForm
+- from wtforms import StringField, SubmitField, PasswordField
+- from wtforms.validators import DataRequired, Email, EqualTo
+- from wtforms import ValidationError
+- from flask_sqlalchemy import SQLAlchemy
+- from flask_migrate import Migrate
+- from flask_login import LoginManager
+
+description:
+- examples of user authentication 
+- user login decorators in use 
+- use of UserMixin for features such as login in users and authorizing  users 
+- use of werkzeug for enctyption / decryption of passwords 
+- forms  for the user to login to the website and register 
+---
