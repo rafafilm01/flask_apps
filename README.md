@@ -92,7 +92,16 @@ description:
 ---
 
 #### flask_app_no6 ####
+libs Used:
+- import os
+- from flask import Flask
+- from flask_sqlalchemy import SQLAlchemy
+- from flask_migrate import Migrate
 
-
+description:
+-flask SQLalchemy in use alng with examples 
+- flask relationships setting up DBs that relate to one another using the foreign_key 
+- example of a boiler plate for flask app with SQL DB
+- accessing data from the table in baisc.py
 ---
 
